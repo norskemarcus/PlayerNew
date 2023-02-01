@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// giver rest API
+
 // husk at dette er URL når man skal teste localhost:
 // http://localhost:9046/api/players
 @RestController
