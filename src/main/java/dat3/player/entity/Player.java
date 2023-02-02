@@ -2,7 +2,6 @@ package dat3.player.entity;
 
 
 import jakarta.persistence.*;
-// TEST TEST
 
 @Entity(name="spiller")
   public class Player {
@@ -10,7 +9,7 @@ import jakarta.persistence.*;
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @Column(name="spiller-navn", nullable = false)
+  @Column(name="spiller_navn", nullable = false)
   private String name;
 
 
@@ -25,6 +24,11 @@ import jakarta.persistence.*;
     public String getName() {
       return name;
     }
+
+
+  public void setName(String name) {
+    this.name = name;
+  }
 
   public int getId() {
     return id;

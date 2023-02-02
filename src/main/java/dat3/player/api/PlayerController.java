@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 // husk at dette er URL når man skal teste localhost:
 // http://localhost:9046/api/players
+
 @RestController
 @RequestMapping("/api/players")
 public class PlayerController {
 
 
-  final PlayerRepository playerRepository;
+  PlayerRepository playerRepository;
 
 
   public PlayerController(PlayerRepository playerRepository) {
@@ -26,6 +27,5 @@ public class PlayerController {
   @GetMapping
   Iterable<Player> getPlayers() {
     return playerRepository.findAll();
-
   }
 }
