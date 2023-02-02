@@ -2,7 +2,7 @@ package dat3.player.entity;
 
 
 import jakarta.persistence.*;
-
+// TEST TEST
 
 @Entity(name="spiller")
   public class Player {
